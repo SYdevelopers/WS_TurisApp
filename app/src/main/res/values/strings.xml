@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">WS_TurisApp</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--SITIOS-->
+    <string name="portal_del_Quindío_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="portal_del_Quindío_CORTA">El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío.</string>
+
+    <string name="unicentro_LARGA">"Unicentro Armenia inaugurado en Septiembre de 2.012,  ubicado en la  esquina de la Avenida Bolívar con la Calle 4B donde antiguamente funcionó la fabrica de Bavaria, a pocos minutos del Centro de Armenia.El centro comercial cuenta con 40 mil metros cuadrados, 129 locales comerciales y 410 parqueaderos.
+Entre las marcas comerciales que ya confirmarón su presencia en Unicentro Armenia, se destacan: Almacenes Exito, Pepe Ganga, Recreatec, Arturo Calle, entre otros."</string>
+    <string name="unicentro_CORTA">Unicentro Armenia inaugurado en Septiembre de 2.012,  ubicado en la  esquina de la Avenida Bolívar con la Calle 4B </string>
+
+    <string name="calima_LARGA">Calima Armenia nace de la necesidad de la ciudad y la región de abrir nuevos espacios comerciales para atender un mercado creciente. Un proyecto con sentido ambiental, hace énfasis en su diseño bioclimático de arquitectura abierta que optimiza el uso de la energía. Calima, un verdadero modelo de sostenimiento, será desarrollado en amplios espacios para atender necesidades comerciales, de servicios, entretenimiento y parqueo.</string>
+    <string name="calima_CORTA">Calima Armenia nace de la necesidad de la ciudad y la región de abrir nuevos espacios comerciales para atender un mercado creciente</string>
+
+    <string name="parque_cafe_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="parque_cafe_CORTA">El Parque del Café  brinda a sus visitantes diversión y entretenimiento a través de la cultura cafetera</string>
+
+    <string name="panaca_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="panaca_CORTA">Hello blank fragment</string>
+
+    <string name="salento_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="salento_CORTA">Hello blank fragment</string>
+
+    <string name="peñas_blancas_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="peñas_blancas_CORTA">Hello blank fragment</string>
+
+    <string name="mama_lulu_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="mama_lulu_CORTA">Hello blank fragment</string>
+
+    <string name="arrieros_LARGA">"El Centro Comercial Portal del Quindio, ubicado en el norte de Armenia, es el centro comercial, más grande e importante del Quindío. Cuenta con 100 locales donde se encuentran representadas las marcas comerciales nacionales e internacionales más importantes.
+En su mall de comidas rápidas encontrará reconocidos restaurantes como Frisby, hamburguesas El Corral y Presto entre otras.
+Todo esta oferta se complementa con una espectacular diverzona y cuatro (4) modernas salas de Cinecolombia."</string>
+    <string name="arrieros_CORTA">Hello blank fragment</string>
+
+
+</resources>
