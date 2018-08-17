@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Chronometer;
 
 import com.santiago.ws_turisapp.R;
 
@@ -29,6 +31,11 @@ public class InicioFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+
+    private Chronometer chronometer;
+    private Button btn;
+    private boolean runing=false;
 
     public InicioFragment() {
         // Required empty public constructor
@@ -64,8 +71,9 @@ public class InicioFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio, container, false);
+        View view=inflater.inflate(R.layout.fragment_inicio, container, false);
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -1,5 +1,6 @@
 package com.santiago.ws_turisapp.activities;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,10 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.santiago.ws_turisapp.R;
+import com.santiago.ws_turisapp.Utils.MyCallBacks;
 import com.santiago.ws_turisapp.fragments.InicioFragment;
+import com.santiago.ws_turisapp.fragments.SitiosFragment;
 
 public class InicioActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,MyCallBacks {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class InicioActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
         if (savedInstanceState ==null){
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new InicioFragment()).commit();
         }
@@ -74,22 +78,23 @@ public class InicioActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.inicio) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new InicioFragment()).commit();
         } else if (id == R.id.nav_gallery) {
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new SitiosFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

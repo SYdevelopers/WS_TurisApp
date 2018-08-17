@@ -4,29 +4,27 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.santiago.ws_turisapp.R;
+import com.santiago.ws_turisapp.adapters.HotelesAdapter;
+import com.santiago.ws_turisapp.data.Datos;
+import com.santiago.ws_turisapp.models.Hotel;
+import com.santiago.ws_turisapp.models.Sitio;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link HotelesFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link HotelesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class HotelesFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private ArrayList<Hotel> hotels;
+    private Datos datos;
+    private RecyclerView recyclerView;
+    private HotelesAdapter adapter;
+    private RecyclerView.LayoutManager manager;
 
     private OnFragmentInteractionListener mListener;
 
@@ -34,38 +32,48 @@ public class HotelesFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HotelesFragment.
-     */
     // TODO: Rename and change types and number of parameters
     public static HotelesFragment newInstance(String param1, String param2) {
         HotelesFragment fragment = new HotelesFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
+
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        datos=new Datos(getContext());
+        hotels=getAllHoteles();
+        if (datos.guardarHoteles(hotels)){
+            Toast.makeText(getContext(), "guardo", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getContext(), "no guardo", Toast.LENGTH_SHORT).show();
         }
+
+    }
+
+    private ArrayList<Hotel> getAllHoteles() {
+        return new ArrayList<Hotel>(){{
+            add(new Hotel("Hotel Bolivar Plaza",getString(R.string.bolivar_plaza_CORTA),"Dirección: Calle 21a No. 14-17, Armenia",getString(R.string.bolivar_plaza_LARGA),4.45234778794663,-75.78196047823484,R.drawable.h_bolivar_plaza));
+            add(new Hotel("Allure Aroma Mocawa Hotel",getString(R.string.mocawa_CORTA),"Dirección: Carrera 14 No. 9N-00, Armenia",getString(R.string.mocawa_LARGA),4.447555758701706,-75.78938483278806,R.drawable.h_mocawa));
+            add(new Hotel("Armenia Hotel",getString(R.string.armenia_CORTA),"Dirección: Avenida Bolivar 8",getString(R.string.armenia_LARGA),4.624838213794354,-75.762595160852,R.drawable.h_armenia));
+            add(new Hotel("Hotel Zuldemayda",getString(R.string.zuldemayda_CORTA),"Dirección: Calle 20 15-38 Armenia",getString(R.string.zuldemayda_LARGA),4.637932138866702,-75.57060538862306,R.drawable.h_zuldemayda));
+            add(new Hotel("Hotel Decameron Panaca",getString(R.string.panaca_hotel_CORTA),"Dirección: Km. 7 Vereda Kerman | Parque Nacional de la Cultura Agropecuaria, Quimbaya, Colombia ",getString(R.string.panaca_hotel_LARGA),4.622357223916545,-75.76650045717768,R.drawable.h_decameron));
+            add(new Hotel("Decameron Las Heliconias",getString(R.string.heliconias_CORTA),"Dirección: Km 2 Vía a Panaca, Vereda Kerman, Quimbaya ",getString(R.string.heliconias_LARGA),4.621929466163072,-75.76083563173823,R.drawable.h_heliconias));
+            add(new Hotel("Hotel Arrayanes del Quindio",getString(R.string.arrayanes_CORTA),"Dirección: Km 1 Vía Montenegro-Parque del Cafe, Montenegro",getString(R.string.arrayanes_LARGA),4.5659102936329115,-75.75595653681637,R.drawable.h_arrayanes));
+            add(new Hotel("Finca Hotel La Esperanza",getString(R.string.esperanza_CORTA),"Dirección: Vereda la esperanza, Montenegro, Colombia ",getString(R.string.esperanza_LARGA),4.566295305869581,-75.75057066111447,R.drawable.h_la_esperanza));
+        }};
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hoteles, container, false);
+
+        View view=inflater.inflate(R.layout.fragment_hoteles, container, false);
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
