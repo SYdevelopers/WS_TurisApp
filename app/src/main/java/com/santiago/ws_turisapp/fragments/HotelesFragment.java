@@ -72,6 +72,7 @@ public class HotelesFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view=inflater.inflate(R.layout.fragment_hoteles, container, false);
+        recyclerView=view.findViewById(R.id.reciclerSitios);
 
         return view;
     }
