@@ -13,7 +13,9 @@ import android.view.MenuItem;
 
 import com.santiago.ws_turisapp.R;
 import com.santiago.ws_turisapp.Utils.MyCallBacks;
+import com.santiago.ws_turisapp.fragments.HotelesFragment;
 import com.santiago.ws_turisapp.fragments.InicioFragment;
+import com.santiago.ws_turisapp.fragments.RestaurantesFragment;
 import com.santiago.ws_turisapp.fragments.SitiosFragment;
 
 public class InicioActivity extends AppCompatActivity
@@ -83,8 +85,9 @@ public class InicioActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new SitiosFragment()).commit();
         } else if (id == R.id.nav_slideshow) {
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new HotelesFragment()).commit();
         } else if (id == R.id.nav_manage) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,new RestaurantesFragment()).commit();
 
         }
 
