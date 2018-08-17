@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -72,7 +73,16 @@ public class HotelesFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view=inflater.inflate(R.layout.fragment_hoteles, container, false);
-        recyclerView=view.findViewById(R.id.reciclerSitios);
+        recyclerView=view.findViewById(R.id.reciclerHoteles);
+        manager=new LinearLayoutManager(getContext());
+        adapter=new HotelesAdapter(R.layout.content_lists, hotels, new HotelesAdapter.onItemClickListener() {
+            @Override
+            public void itemClick(Hotel hotel, int position) {
+
+            }
+        });
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(manager);
 
         return view;
     }
