@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,26 +45,26 @@ public class RestaurantesFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         datos=new Datos(getContext());
-        restaurantes=getAllRestaurantes();
-        if (datos.guardarRestaurantes(restaurantes)){
-            Toast.makeText(getContext(), "guardo", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(getContext(), "no guardo", Toast.LENGTH_SHORT).show();
-        }
+        restaurantes=datos.listarRestaurantes();
 
     }
 
-    private ArrayList<Restaurante> getAllRestaurantes() {
-        return new ArrayList<Restaurante>(){{
-
-        }};
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_restaurantes, container, false);
+        recyclerView=view.findViewById(R.id.reciclerRestaurantes);
+        manager=new LinearLayoutManager(getContext());
+        adapter=new RestaAdapter(R.layout.content_lists, restaurantes, new RestaAdapter.onItemClickListener() {
+            @Override
+            public void itemClick(Restaurante restaurante, int position) {
+
+            }
+        });
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(adapter);
+
         return view;
     }
 

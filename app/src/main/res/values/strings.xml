@@ -71,32 +71,30 @@
     <string name="esperanza_LARGA">Una gran estadía con familia en un lugar donde se respira naturaleza y está cerca de los atractivos turísticos de la región. Una experiencia de servicio magnífica donde cada uno de las personas que trabajan allí hacen todo por que la experiencia sea magnífica, Dirección: Vereda la esperanza, Montenegro, Colombia </string>
     <string name="esperanza_CORTA">Hotel campestre,  Cantidad de habitaciones: 39 </string>
 
+
+
     <!--RESTAURANTES-->
 
-    <string name="bolivar_plaza_LARGA">"Hotel sencillo, sin mayores pretensiones pero bien ubicado, cerca del centro de armenia, con facilidad de acceso para visitantes de negocios. Adecuado para pasar una o dos noches, es acogedor y el servicio es muy bueno. Dirección Calle 21a No. 14-17, Armenia"</string>
-    <string name="bolivar_plaza_CORTA">Categoría del hotel:3,5 estrella(s), Cantidad de habitaciones: 18 </string>
+    <string name="roble_LARGA">En el Restaurante El Roble encontrarás comida típica de la región con la mejor sazón, y espacios para el esparcimiento familiar en nuestro Café Rockola y Parque Recreativo y Granja. El Roble es reconocido por su tradición gastronómica, sus amplios y verdes espacios para el entretenimiento familiar y su excelente ubicación, donde podrás vivir y sentir el paisaje cultural cafetero, apreciar el municipio de Salento y el nevado del Tolima. En el Restaurante El Roble encontrarás comida típica de la región con la mejor sazón, y espacios para el esparcimiento familiar en nuestro Café Rockola y Parque Recreativo y Granja.</string>
+    <string name="roble_CORTA">En el Restaurante El Roble encontrarás comida típica de la región con la mejor sazón</string>
 
-    <string name="mocawa_LARGA">"Disfruta de un hotel de excelente calidad y con un sello personal que lo hace ser único. Con una atención cinco estrellas, lo hace una de las mejores alternativas en hospedaje es Armenia. Con una perfecta ubicación y contar con un buen restaurante y un centro comercial, Dirección Carrera 14 No. 9N-00, Armenia"</string>
-    <string name="mocawa_CORTA">" Categoría del hotel:3,5 estrella(s),Cantidad de habitaciones: 97 "</string>
+    <string name="fogata_LARGA">El Restaurante La Fogata ubicado en la ciudad de Armenia Colombia, es catalogado como el mejor restaurante del Triángulo del Café por diferentes medios especializados en gastronomía; El único sitio donde se destaca la constancia, la buena atención, el buen sabor y fidelidad de todos sus comensales. La Fogata está situada en el sector más dinámico de Armenia y por su ubicación se convierte en una bella isla urbana donde se disfrutan las más exquisitas sensaciones.</string>
+    <string name="fogata_CORTA">El Restaurante La Fogata ubicado en la ciudad de Armenia Colombia, es catalogado como el mejor restaurante del Triángulo del Café </string>
 
-    <string name="armenia_LARGA">Una excelente opción en Armenia, el hotel es amplio y muy bien atendido por todo el personal. Las habitaciones son bastante cómodas y muy bien dotadas par tener una agradable estadía. La estadía incluye un desayuno tipo bufete que está muy bien balanceado y ofrece gran variedad.  Dirección: Avenida Bolivar 8</string>
-    <string name="armenia_CORTA">" Categoría del hotel:3 estrella(s),Cantidad de habitaciones: 129 "</string>
+    <string name="papaya_LARGA">"Este es uno de los restaurantes del Quindio más nuevos y exitosos. Está localizado en la ciudad milagro de Colombia. Presenta a sus comensales una hermosa vista de las montañas de la Cordillera Central de Colombia y del cañón creado por la cuenca del Río Quindio y sus alrededores."</string>
+    <string name="papaya_CORTA">Este es uno de los restaurantes del Quindio más nuevos y exitosos.</string>
 
-    <string name="zuldemayda_LARGA">Hotel ubicado en el centro de la cuidad de Armenia (dos cuadras del parque principal), confortable, elegante, la atención es espectacular, wifi muy rapido, desayuno incluido, precios especiales los fines de semana. En la recepción lo asesoran en planes de recreación en todo el eje cafetero. Dirección: Calle 20 15-38 Armenia</string>
-    <string name="zuldemayda_CORTA">Hotel central, Cantidad de habitaciones: 27 </string>
+    <string name="casa_verde_LARGA">Casa Verde Campestre cuenta con un salón principal con capacidad para 200 personas, áreas ecológicas con plantas florales y frutales, parqueadero amplio, senderos naturales y zona de camping.</string>
+    <string name="casa_verde_CORTA">Casa Verde Campestre cuenta con un salón principal con capacidad para 200 personas</string>
 
-    <string name="panaca_hotel_LARGA">Este hotel no solamente cuenta con una ambientación increíble sino además es parte de la naturaleza de Armenia. La atención es muy buena, la comida excelente y además entrada a panaca ilimitada, Dirección: Km. 7 Vereda Kerman | Parque Nacional de la Cultura Agropecuaria, Quimbaya, Colombia </string>
-    <string name="panaca_hotel_CORTA">" Categoría del hotel:3,5 estrella(s),Cantidad de habitaciones: 34 "</string>
+    <string name="camelia_LARGA">Ubicado al interior del Hotel Campestre las Camelias, tiene capacidad para 250 personas, ofrece una variedad de platos y comida Típica, Nacional e Internacional. </string>
+    <string name="camelia_CORTA">Restaurante de hotel campestre </string>
 
-    <string name="heliconias_LARGA">Este excelente hotel, ubicado muy cerca de Panaca, como hotel, tienen una calificación de excelente, acceso al parque Panaca incluido y al Parque Nacional del Café, esto es muy bueno, además que cuenta con trasporte entre hoteles y parque, la comida buena, snack buenos, instalaciones excelentes, Dirección: Km 2 Vía a Panaca, Vereda Kerman, Quimbaya  </string>
-    <string name="heliconias_CORTA"> Hotel campestre, Cantidad de habitaciones: 100 </string>
+    <string name="cocora_LARGA">El sitio está ubicado en pleno Valle del Cocora a 10 Km. del Municipio de Salento, es atendido directamente por sus propietarios lo que complementa la excelencia en el servicio, ya que consideramos que esto garantiza el calor humano que requiere este tipo de establecimientos. El Valle del Cocora es reconocido a nivel mundial y nacional por su hermoso paisaje, por sus palmas de Cera que miden más 60 metros (las más altas del mundo) y declaradas el árbol Nacional de Colombia. Allí es la cuna del nacimiento del Río Quindío y es una de las entradas al Parque Natural de los Nevados.</string>
+    <string name="cocora_CORTA">El sitio está ubicado en pleno Valle del Cocora a 10 Km. del Municipio de Salento</string>
 
-    <string name="arrayanes_LARGA">Lugar estupendo para una estancia tranquila, relajada, con un ambiente sobrio y además muy bien ubicado para desplazamientos hacia los sitios turísticos o parques temáticos. Además el desayuno es estupendo, y el sitio se presta para leer en un super ambiente, Dirección: Km 1 Vía Montenegro-Parque del Cafe, Montenegro</string>
-    <string name="arrayanes_CORTA">" Categoría del hotel:3 estrella(s),Cantidad de habitaciones: 20 "</string>
-
-    <string name="esperanza_LARGA">Una gran estadía con familia en un lugar donde se respira naturaleza y está cerca de los atractivos turísticos de la región. Una experiencia de servicio magnífica donde cada uno de las personas que trabajan allí hacen todo por que la experiencia sea magnífica, Dirección: Vereda la esperanza, Montenegro, Colombia </string>
-    <string name="esperanza_CORTA">Hotel campestre,  Cantidad de habitaciones: 39 </string>
-
+    <string name="solar_LARGA">"Creado hace 10 años, inició como un juego empresarial con un salón con cocina y parrilla con capacidad para 80 personas.El Restaurante El Solar abrió sus puertas a principios del año 2001, desde entonces ha crecido en su planta física y oferta gastronómica para brindarle a sus clientes una experiencia inolvidable. "</string>
+    <string name="solar_CORTA">Creado hace 10 años, inició como un juego empresarial con un salón con cocina y parrilla con capacidad para 80 personas.</string>
 
 
 </resources>

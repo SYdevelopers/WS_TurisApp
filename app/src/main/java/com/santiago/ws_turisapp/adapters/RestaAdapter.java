@@ -18,6 +18,13 @@ public class RestaAdapter extends RecyclerView.Adapter<RestaAdapter.ViewHolder> 
     private int layout;
     private ArrayList<Restaurante>restaurantes;
     private onItemClickListener listener;
+
+    public RestaAdapter(int layout, ArrayList<Restaurante> restaurantes, onItemClickListener listener) {
+        this.layout = layout;
+        this.restaurantes = restaurantes;
+        this.listener = listener;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
